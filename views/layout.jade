@@ -1,0 +1,37 @@
+doctype html
+html
+  head
+    title= title
+    script(src="//code.jquery.com/jquery-1.11.0.min.js")
+
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css")
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js")
+
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    img(src= "../images/splatterTopRight.png" id="top-right-image" alt="paint splash")
+    nav(class="navbar navbar-default navbar-fixed-top" role="navigation")
+      div(class="container")
+        ul(class="nav navbar-nav")
+          if title == "Haley Young"
+            li(class="nav-link selected")
+              a(href="/") Home
+          else
+            li(class="nav-link")
+              a(href="/") Home
+
+          if title == "Resume"
+            li(class="nav-link selected")
+              a(href="/resume") R&#233;sum&#233;
+          else
+            li(class="nav-link")
+              a(href="/resume") R&#233;sum&#233;
+
+          if title == "Projects"
+            li(class="nav-link selected")
+              a(href="/projects") Projects
+          else
+            li(class="nav-link")
+              a(href="/projects") Projects
+  block content

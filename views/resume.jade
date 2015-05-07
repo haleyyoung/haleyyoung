@@ -4,10 +4,103 @@ block content
   script(src="/javascripts/resume.js")
   h1= title
   div
+  .panel.panel-default.content.resume-download
+    div
+    .panel-body
+      h2
+        a(href="/images/HaleyYoungResume.pdf" target="_blank" class="outside-link") Download 
+        | my resume
+
+  div
   .panel.panel-default.content
     div
     .panel-body
-      object(data="/images/HaleyYoungResume.pdf" type="application/pdf" width="100%" height="100%")
-        param(name="wmode" value="transparent")
-        p It appears you don't have a PDF plugin for this browser. No biggie... you can 
-          a(href="/images/HaleyYoungResume.pdf") click here to download the PDF file.
+      h2(class="purple-text") haleyyoung.info@gmail.com
+
+      div(class="resume-chunk")
+        h2(class="resume-label") Career Objectives
+        p(class="indent") I am seeking a career in web development utilizing my creativity, problem solving, and group-work skills.
+
+      div(class="resume-chunk")
+        h2(class="resume-label") Technical Expertise
+        p
+          i Languages
+          p(class="indent") JavaScript, Ruby, Java, C#, Bash, PowerShell, C, Python, Clojure, HTML5, CSS3, LaTeX
+        p
+          i Frameworks/Libraries
+          p(class="indent") jQuery, Bootstrap, D3, JavaScriptMVC, NodeJS, PostgreSQL, Django, JavaCC, Ruby on Rails, Maven
+        p
+          i Operating Systems
+          p(class="indent") Linux, Microsoft Windows, Apple OS X
+        p
+          i Development Tools
+          p(class="indent") Git, Nginx, Eclipse, Visual Studio, ImageMagick, Mathematica
+        p
+          i Applications
+          p(class="indent") Logisim, BizTalk, SCOM
+
+      div(class="resume-chunk")
+        h2(class="resume-label") Education
+        p Loyola Marymount University, Los Angeles, CA
+        i Bachelor of Science, Computer Science
+          span(class="float-right")  December 2013
+        p(class="indent") Minors: Applied Mathematics and Dance
+        p(class="indent")
+        p(class="indent") GPA: 3.92
+
+
+      div(class="resume-chunk")
+        h2(class="resume-label") Projects
+        p Loyola Marymount University, Los Angeles, CA
+        i BalletBot
+          span(class="float-right") Fall 2014
+        p(class="indent") Develop a ballet teaching video game from design to implementation
+        p(class="indent") Interact with the xBox Kinect API
+        p(class="indent") Test on multiple users and present to the computer science department
+
+        p Loyola Marymount University, Los Angeles, CA
+        i Yoda-Lang
+          span(class="float-right") Spring 2013
+        p(class="indent") Create a language based on Yoda’s sentence structure
+        p(class="indent") Design the language beginning with a grammar, then create a compiler
+        p(class="indent") Construct a translator using JavaCC
+
+
+      div(class="resume-chunk")
+        h2(class="resume-label") Experience
+        p Hewlett-Packard, Austin, TX
+        i IT Developer/Engineer
+          span(class="float-right") January 2014 -
+        p(class="indent") Design and develop web-based application support tools
+        p(class="indent") Monitor mission critical systems to maintain maximum up-time using SCOM and BizTalk
+        p(class="indent") Respond to and resolve customer complaints and concerns immediately
+        p(class="indent") Recommend performance enhancement plans to upper management
+
+        p TechEmpower Inc., Los Angeles, CA
+        i Programming Intern
+          span(class="float-right") May 2013 - November 2013
+        p(class="indent") Remedy bug report issues in a timely manner
+        p(class="indent") Interpret and clarify customer software requirements before beginning implementation
+        p(class="indent") Apply customer requests to website feature implementations
+        p(class="indent") Research possible frameworks for upcoming projects
+
+        p Capsule, Los Angeles, CA
+        i Programming Intern
+          span(class="float-right") March 2013 - May 2013
+        p(class="indent") Produce an automated graphic business card generator based on user image upload
+
+        p Loyola Marymount University, Los Angeles, CA
+        i Research Assistant, Teaching Artificial Intelligence as a Lab Science
+        p
+          i NSF Grant
+            span(class="float-right") August 2012 - December 2012
+        p(class="indent") Research and develop algorithms to implement lab modules on artificial intelligence concepts
+        p(class="indent") Deliver a conceptual clustering lab module using JavaScript
+        p(class="indent") Orchestrate a Git version control repository
+
+        p Loyola Marymount University, Los Angeles, CA
+        i Teaching Assistant, Keck Computing Lab
+          span(class="float-right") August 2012 - December 2013
+        p(class="indent") Supervise lab security at all times
+        p(class="indent") Guide students to helpful solutions when having trouble with homework
+        p(class="indent") Motivate students to take advantage of debugging techniques and resources

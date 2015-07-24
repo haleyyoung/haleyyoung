@@ -108,7 +108,7 @@ h2 {
   font-size: 1em;
 }
 
-.resume-label {
+.resume-label, .project-title {
   color: #d46a31;
 }
 

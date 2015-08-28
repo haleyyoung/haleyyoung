@@ -16,29 +16,22 @@ html
         ul(class="nav navbar-nav")
           if title == "Haley Young"
             li(class="nav-link selected")
-              a(href="/") Home
+              a(href="/lmuHome") Home
           else
             li(class="nav-link")
-              a(href="/") Home
+              a(href="/lmuHome") Home
 
-          if title == "About Me"
+          if title == "Syllabus"
             li(class="nav-link selected")
-              a(href="/aboutMe") About Me
+              a(href="/syllabus") Syllabus
           else
             li(class="nav-link")
-              a(href="/aboutMe") About Me
+              a(href="/syllabus") Syllabus
 
-          if title == "Resume"
+          if title == "Course Notes"
             li(class="nav-link selected")
-              a(href="/resume") R&#233;sum&#233;
+              a(href="/courseNotes") Course Notes
           else
             li(class="nav-link")
-              a(href="/resume") R&#233;sum&#233;
-
-          if title == "Projects"
-            li(class="nav-link selected")
-              a(href="/projects") Projects
-          else
-            li(class="nav-link")
-              a(href="/projects") Projects
+              a(href="/courseNotes") Course Notes
   block content

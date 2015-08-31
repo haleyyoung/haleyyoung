@@ -31,9 +31,14 @@ router.get('/syllabus', function(req, res) {
 	res.render('syllabus', {title: 'Syllabus'});
 });
 
-/* GET syllabus page. */
+/* GET course notes page. */
 router.get('/courseNotes', function(req, res) {
 	res.render('courseNotes', {title: 'Course Notes'});
+});
+
+/* GET introduction page. */
+router.get('/intro', function(req, res) {
+	res.render('notes/intro', {title: 'An introduction'});
 });
 
 module.exports = router;

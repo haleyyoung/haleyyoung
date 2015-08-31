@@ -10,7 +10,7 @@ html
 
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    img(src= "../images/splatterTopRight.png" id="top-right-image" alt="paint splash")
+    img(src= "/images/splatterTopRight.png" id="top-right-image" alt="paint splash")
     nav(class="navbar navbar-default navbar-fixed-top" role="navigation")
       div(class="container")
         ul(class="nav navbar-nav")
@@ -23,15 +23,15 @@ html
 
           if title == "Syllabus"
             li(class="nav-link selected")
-              a(href="/syllabus") Syllabus
+              a(href="/cmsi185/syllabus") Syllabus
           else
             li(class="nav-link")
-              a(href="/syllabus") Syllabus
+              a(href="/cmsi185/syllabus") Syllabus
 
           if title == "Course Notes"
             li(class="nav-link selected")
-              a(href="/courseNotes") Course Notes
+              a(href="/cmsi185/courseNotes") Course Notes
           else
             li(class="nav-link")
-              a(href="/courseNotes") Course Notes
+              a(href="/cmsi185/courseNotes") Course Notes
   block content

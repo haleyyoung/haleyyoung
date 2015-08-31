@@ -31,14 +31,19 @@ router.get('/syllabus', function(req, res) {
 	res.render('syllabus', {title: 'Syllabus'});
 });
 
+/* GET syllabus page. */
+router.get('/cmsi185/syllabus', function(req, res) {
+	res.render('cmsi185/syllabus', {title: 'Syllabus'});
+});
+
 /* GET course notes page. */
-router.get('/courseNotes', function(req, res) {
-	res.render('courseNotes', {title: 'Course Notes'});
+router.get('/cmsi185/courseNotes', function(req, res) {
+	res.render('cmsi185/courseNotes', {title: 'Course Notes'});
 });
 
 /* GET introduction page. */
-router.get('/intro', function(req, res) {
-	res.render('notes/intro', {title: 'An introduction'});
+router.get('/cmsi185/courseNotes/intro', function(req, res) {
+	res.render('cmsi185/notes/intro', {title: 'An introduction'});
 });
 
 module.exports = router;

@@ -76,8 +76,13 @@ h2 {
   font-weight: 800;
 }
 
+table tr:first-child td {
+  border-top: 1px solid;
+}
+
 table tr td {
  padding-left: 5%;
+ border-bottom: 1px solid;
 }
 
 .outside-link {

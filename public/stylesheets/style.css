@@ -144,7 +144,7 @@ object {
   color: #160426;
 }
 
-.screenshot {
+.screenshot, .notes-image {
   width: 100%;
   margin-left: auto;
   margin-right: auto;

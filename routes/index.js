@@ -46,4 +46,14 @@ router.get('/cmsi185/courseNotes/intro', function(req, res) {
 	res.render('./cmsi185/notes/intro', {title: 'An introduction'});
 });
 
+/* GET jsIntroPage page. */
+router.get('/cmsi185/courseNotes/compSciJSIntro', function(req, res) {
+	res.render('./cmsi185/notes/compSciJSIntro', {title: 'Computer Science and JavaScript'});
+});
+
+/* GET dataTypesAndVariables page. */
+router.get('/cmsi185/courseNotes/dataTypesAndVariables', function(req, res) {
+	res.render('./cmsi185/notes/dataTypesAndVariables', {title: 'Data Types and Variables'});
+});
+
 module.exports = router;

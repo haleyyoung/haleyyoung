@@ -1,0 +1,146 @@
+extends ../../lmuLayout
+
+block content
+  h1= title
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") JavaScript's data types are:
+      p(class="indent") &#8226 Booleans - true/false
+      p(class="indent") &#8226 Numbers - integers, floating point numbers, hexadecimal, binary, octal
+      p(class="indent") &#8226 Strings - characters, words, sentences, etc.
+      p(class="indent") &#8226 Special types - null, undefined, NaN
+      p(class="indent") &#8226 Objects
+      p(class="indent") &#8226 Arrays
+      p(class="indent") &#8226 Functions
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") Booleans
+      p Values that evaluate to true: 1, "1", true
+      p Values that evaluate to false: 0, "0", "4", "a", null, undefined, "null", false, "true"
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") Numbers
+      p JavaScript uses 64-bit floating-point encoding
+      p The largest/smallest numbers in JavaScript are &#177 1.79x10^308
+      p(class="indent") - Anything larger than this magnitude will result in JavaScript returning &#177 Infinity
+      p All integers between &#177 9007199254740992 will be represented exactly, anything outside of that range will
+      | be less accurately represented
+      br
+      h2(class="project-title") Special Numbers
+      p(class="indent") Infinity
+      p(class="indent") NaN
+      p(class="indent") Number.MIN_VALUE
+      p(class="indent") Number.MAX_VALUE
+      p(class="indent") Number.NaN
+      p(class="indent") Number.POSITIVE_INFINITY
+      p(class="indent") Number.NEGATIVE_INFINITY
+      br
+      p If you try to coerce undefined to a number, JavaScript will return NaN
+      p If you try to coerce null to a number, JavaScript will return 0
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") Strings
+      p Characters vs. Glyphs
+      p(class="indent") A character is a named symbol while a glyph is the picture of a character
+      p A string is wrapped in single or double quotes 
+      p(class="indent") "pen" or 'pen'
+      br
+      p If you try to coerce null to a string, JavaScript will return "null"
+      p Some functions for strings: length, toUpper, toLower, parseInt, parseFloat
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") Variables
+      p To store a value in memory, you use a variable
+      p(class="indent") var a = 4;
+      p To update a variable's value, you just don't use the var keyword
+      p(class="indent") a = 8;
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") Comments
+      p Single-line comments in JavaScript start with //
+      p Multi-line comments in JavaScript start and end with /*, */ respectively
+      p(class="indent") /* For example:
+      p(class="indent") This could be a comment I'm writing
+      p(class="indent") on multiple lines.
+      p(class="indent") * Convention is to put
+      p(class="indent") * an asterisk at the beginning of every line. */
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") JavaScript Keywords
+      table
+        tr
+          td break
+        tr
+          td case
+        tr
+          td catch
+        tr
+          td continue
+        tr
+          td default
+        tr
+          td delete
+        tr
+          td do
+        tr
+          td else
+        tr
+          td false
+        tr
+          td finally
+        tr
+          td for
+        tr
+          td function
+        tr
+          td if
+        tr
+          td in
+        tr
+          td instanceof
+        tr
+          td new
+        tr
+          td null
+        tr
+          td return
+        tr
+          td switch
+        tr
+          td this
+        tr
+          td throw
+        tr
+          td true
+        tr
+          td try
+        tr
+          td typeof
+        tr
+          td var
+        tr
+          td void
+        tr
+          td while
+        tr
+          td with

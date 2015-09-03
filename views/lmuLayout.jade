@@ -34,4 +34,12 @@ html
           else
             li(class="nav-link")
               a(href="/cmsi185/courseNotes") Course Notes
+
+          if title == "Homework"
+            li(class="nav-link selected")
+              a(href="/cmsi185/homework") Homework
+          else
+            li(class="nav-link")
+              a(href="/cmsi185/homework") Homework
+
   block content

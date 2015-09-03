@@ -41,6 +41,11 @@ router.get('/cmsi185/courseNotes', function(req, res) {
 	res.render('./cmsi185/courseNotes', {title: 'Course Notes'});
 });
 
+/* GET homework page. */
+router.get('/cmsi185/homework', function(req, res) {
+	res.render('./cmsi185/homework', {title: 'Homework'});
+});
+
 /* GET introduction page. */
 router.get('/cmsi185/courseNotes/intro', function(req, res) {
 	res.render('./cmsi185/notes/intro', {title: 'An introduction'});
@@ -55,5 +60,11 @@ router.get('/cmsi185/courseNotes/compSciJSIntro', function(req, res) {
 router.get('/cmsi185/courseNotes/dataTypesAndVariables', function(req, res) {
 	res.render('./cmsi185/notes/dataTypesAndVariables', {title: 'Data Types and Variables'});
 });
+
+/* GET homework1 page. */
+router.get('/cmsi185/homework/1', function(req, res) {
+	res.render('./cmsi185/homework/homework1', {title: 'Homework 1'});
+});
+
 
 module.exports = router;

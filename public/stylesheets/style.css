@@ -85,6 +85,12 @@ table tr td {
  border-bottom: 1px solid;
 }
 
+p code {
+  display: block;
+  margin-left: 10%;
+  font-size: 0.55em;
+}
+
 .outside-link {
   color: #7E1021;
 }

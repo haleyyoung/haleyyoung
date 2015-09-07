@@ -61,6 +61,21 @@ router.get('/cmsi185/courseNotes/dataTypesAndVariables', function(req, res) {
 	res.render('./cmsi185/notes/dataTypesAndVariables', {title: 'Data Types and Variables'});
 });
 
+/* GET built in functions page. */
+router.get('/cmsi185/courseNotes/builtInFunctions', function(req, res) {
+	res.render('./cmsi185/notes/builtInFunctions', {title: 'Built in Functions'});
+});
+
+/* GET statements page. */
+router.get('/cmsi185/courseNotes/statements', function(req, res) {
+	res.render('./cmsi185/notes/statements', {title: 'Statements'});
+});
+
+/* GET expressions page. */
+router.get('/cmsi185/courseNotes/expressions', function(req, res) {
+	res.render('./cmsi185/notes/expressions', {title: 'Expressions'});
+});
+
 /* GET homework1 page. */
 router.get('/cmsi185/homework/1', function(req, res) {
 	res.render('./cmsi185/homework/homework1', {title: 'Homework 1'});

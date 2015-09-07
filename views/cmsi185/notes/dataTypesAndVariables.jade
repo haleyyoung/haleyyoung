@@ -20,8 +20,9 @@ block content
     div
     .panel-body
       h2(class="project-title") Booleans
-      p Values that evaluate to true: 1, "1", true
-      p Values that evaluate to false: 0, "0", "4", "a", null, undefined, "null", false, "true"
+      p Values that evaluate to false: 0, "", null, undefined, false, NaN
+      p Values that evaluate to true: anything else
+      p(class="indent") ex: 1, "1", true, "a"
 
   div
   .panel.panel-default.content.project-div

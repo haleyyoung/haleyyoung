@@ -1,0 +1,48 @@
+extends ../../lmuLayout
+
+block content
+  h1= title
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") Typeof
+      p(class="indent") Typeof is a unary operator which returns the type of its argument. It will return one of 
+        | boolean, number, string, undefined, object, function
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") Built-in Functions
+      p Built-in functions are functions that exist within the language. They are commonly used operations and 
+        | are therefore considered important enough to come innately with the language.
+      p(class="indent") String functions
+        :markdown
+          ```
+          s.toUpperCase()  
+          s.toLowerCase()  
+          s.replace() //takes 2 arguments  
+          s.charAt()  
+          s.indexOf()  
+          s.lastIndexOf()  
+          s.substring //takes 2 arguments  
+          ```
+      br
+      p(class="indent") Number Functions
+        :markdown
+          ```
+          n.toString()  
+          n.toFixed()
+          ```
+      br
+      p(class="indent") There's also the Math class which has a lot of useful functions
+        :markdown
+          ```
+          Math.ceil()  
+          Math.sqrt()  
+          Math.pow() //takes 2 arguments  
+          Math.random() //returns a random number between 0 (inclusive) and 1 (exclusive)  
+          Math.sin()  
+          Math.cos()  
+          Math.tan()
+          ```

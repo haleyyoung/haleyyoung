@@ -1,0 +1,144 @@
+extends ../../lmuLayout
+
+block content
+  h1= title
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") Expressions
+      p(class="indent") An expression is evaluated to produce a value
+      p(class="indent") Examples
+        :markdown
+          ```
+          4 + 4;  
+          i * 13;  
+          money > 6;  
+          awake && dressed;
+          ```
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") Comparison Operators
+      p Comparison operators are binary operators. We have:
+      p(class="indent")
+        :markdown
+          `> < >= <=`
+      br
+      p With strings, these comparisons will be in alphabetical order and with numbers, the comparisons will be 
+        | the expected numerical order.
+      p(class="indent")
+        :markdown
+          ```
+          "a" > "b"; //evaluates to false  
+          4 > 3; // evaluates to true  
+          5 >= 5; //evaluates to true
+          ```
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") Assignment Operators
+      p Our assignment operators are
+      p(class="indent")
+        :markdown
+          `= += -= *= /= ++ --`
+      br
+      p(class="indent") Examples:
+        :markdown
+          ```
+          var y = 4;  
+          y += 4;  
+          y -= 2;  
+          y++;
+          ```
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") Double equals vs. triple equals
+      p Double equals compares only value while triple equals compares both value and type.
+      p(class="indent") For example,
+        :markdown
+          ```
+          "4" == 4; //true  
+          "4" === 4; //false
+          ```
+      p Conversely, we have the inequality operators
+      p(class="indent")
+        :markdown
+          `!= !==`
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") Logical Operators
+      p Logical operators use the AND/OR/NOT logic we most commonly know
+      p(class="indent")
+        :markdown
+          `&& || !`
+      p(class="indent") For example in English, we say:
+      p(class="indent") &#8226 The sky is blue AND the grass is green
+      p(class="indent") &#8226 You can have water OR MILK
+      p(class="indent") &#8226 I am NOT at Disneyland
+
+      p(class="indent") In code, assuming these variables exist,
+        :markdown
+          ```
+          sky === "blue" && grass === "green";  
+          water || milk;  
+          !atDisneyland;
+          ```
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") Operator Precedence
+      p Pre or post increment operators have highest precedence, along with all unary operators
+      p(class="indent")
+        :markdown
+          ```
+            ++  
+            --  
+            +x  
+            -x  
+            !true  
+            typeof x
+          ```
+      p Then math operators: multiplication, division, and modulo before addition and subtraction
+      p(class="indent")
+        :markdown
+          `* / % + -`
+      p Then string concatenation
+      p(class="indent")
+        :markdown
+          `"hi " + "there"`
+      p Then comparison operators
+      p(class="indent")
+        :markdown
+          ` > < >= <=`
+      p Then equality operators
+      p(class="indent")
+        :markdown
+          `== === != !==`
+      p Then logical operators operators
+      p(class="indent")
+        :markdown
+          `&& ||`
+      p And lastly, assignment operators
+      p(class="indent")
+        :markdown
+          ```
+          x = 4;  
+          x += 4;  
+          x -= 4;  
+          x *= 4;  
+          x /= 4;  
+          x %= 4;
+          ```

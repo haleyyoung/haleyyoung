@@ -1,0 +1,56 @@
+extends ../../lmuLayout
+
+block content
+  h1= title
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") Statements
+      p(class="indent") A statement is a command that can cause an event to occur or a change in the current state 
+        | of your program
+      p(class="indent")
+        :markdown
+          ```
+          var x = 0;  
+          x = 6;  
+          alert(x);
+          ```
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") Variables are passed by value
+      p In any programming language, a variable can be passed by value or reference. If a variable is passed 
+        | by value, anything that happens to the passed instance of the variable does not affect the original 
+        | instance of the variable. If passed by reference, anything that happens to the new instance will affect 
+        | the original instance.
+      br
+      p JavaScript passes variables by value. So we don't need to worry about changing new instances of variables. 
+        | For example:
+      p(class="indent")
+        :markdown
+          ```
+          var z = 4;  
+          var y = z;  
+          y = 6;  
+          alert(z); // This will print 4
+          ```
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") The If-Statement
+      p The If-statement allows the computer to execute a block of code based on a condition.
+      p(class="indent")
+        :markdown
+          ```
+          if(conditional) {  
+              //code block  
+          }  
+          else {  
+              //code block  
+          }
+          ```

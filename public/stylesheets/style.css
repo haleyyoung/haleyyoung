@@ -87,6 +87,8 @@ table tr td {
 
 p code {
   display: block;
+  width: 70%;
+  background-color: rgba(245,245,245,0.8);  
   margin-left: 10%;
   font-size: 0.55em;
 }

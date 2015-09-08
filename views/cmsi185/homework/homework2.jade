@@ -1,0 +1,76 @@
+extends ../../lmuLayout
+
+block content
+  h1= title
+
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") Instructions
+      p Type up your solutions. For questions involving code, save your code in a JSFiddle and 
+        | email me the JSFiddle URL as well as put the code in your hard copy.
+      br
+      p Make sure to test all user input for valid input.
+      p Points will be taken off for code that does not do what the question asked, for unclean code, and for 
+        | code that accepts invalid input.
+      br
+      p Due September 22nd
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      p 1. Write a program that asks a user their birth month and returns a holiday in that month. Do not use a bunch of if-statements. 
+        | Make sure "January", "january", "JANUARY", "jAnUaRy", etc. are all acceptable inputs and are all handled under one case.
+      br
+
+      p 2. Write a program that asks a user for the two shorter sides of a triangle and prints out the length of the third (and longest) side.
+      br
+
+      p 3. Remember those choose your own adventure books? Write a program that asks a user to choose between two choices - three consecutive 
+        | times - and prints out the story the user chooses as they choose it.
+      p ex: You're going on an adventure to Disneyland, do you go on the Matterhorn or Indiana Jones first?
+      p(class="indent") (User chooses Indiana Jones)
+      p(class="indent") Oh my gosh! You went on Indiana Jones and it broke down! You had to walk through the darkness 
+        | to find your way out.
+      p(class="indent") Did you make it out?
+      p(class="indent") (User chooses yes)
+      p(class="indent") Phew, that could have been horribly scary with all the skulls in there...
+      p(class="indent") Let's relax after that, do you want a churro or a Mickey ice cream popsicle?
+      p(class="indent") (User chooses Mickey ice cream popsicle)
+      p(class="indent") Here's a napkin, it's hot out and that ice cream will be melting quickly :)
+      br
+
+      p 4. Write a program that asks the user for three coefficients in a quadratic equation: ax^2 + bx + c and calculates the
+        | roots of that equation.
+      br
+
+      p 5.
+      p(class="indent") a. Write a program that returns a random whole number between 4 and 14. 
+      p(class="indent") b. Then write a program that asks a user for two positive number bounds and returns a random whole number 
+        | between those two positive numbers.
+      br
+
+      p 6. SHOW YOUR WORK! What does each of these expressions evaluate to?
+      p(class="indent") a. 
+        :markdown
+          `10 * 4.3 / (92 - 111)^2 > 7`
+      p(class="indent") b. 
+        :markdown
+          `2 > 6 === true`
+      p(class="indent") c. 
+        :markdown
+          `4 * (3 * (2 * (5 - -99) * 37) % 2)`
+      p(class="indent") d. 
+        :markdown
+          `Math.round(Math.floor(Math.sqrt(Math.ceil(Math.pow(2, 4) * 5.3))) / 6.2)`
+      p(class="indent") e. 
+        :markdown
+          `5 + 9 - -11 / 79 / 2.8 % 4`
+      br
+
+      p 7. Tell me what, if anything, is wrong with each line of this code. Then rewrite the code in the cleanest way possible.
+      p(class="indent")
+        img(src="/images/badCode.png")

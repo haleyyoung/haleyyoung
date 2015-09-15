@@ -99,6 +99,21 @@ block content
   .panel.panel-default.content.project-div
     div
     .panel-body
+      h2(class="project-title") The Ternary Operator
+      p The ternary operator is useful for writing a one-liner if-statement
+      p(class="indent")
+        :markdown
+          `<conditional> ? <execute if true> : <execute if false>`
+      p(class="indent") For example in English, we say:
+      p(class="indent") &#8226 If x is greater than 4, set y equal to "large", otherwise set y equal to "small"
+      p(class="indent")
+        :markdown
+          `var y = x > 4 ? "large" : "small";`
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
       h2(class="project-title") Operator Precedence
       p Pre or post increment operators have highest precedence, along with all unary operators
       p(class="indent")

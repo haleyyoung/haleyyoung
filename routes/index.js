@@ -76,6 +76,11 @@ router.get('/cmsi185/courseNotes/expressions', function(req, res) {
 	res.render('./cmsi185/notes/expressions', {title: 'Expressions'});
 });
 
+/* GET comments and clean code page*/
+router.get('/cmsi185/courseNotes/commentsAndCleanCode', function(req, res) {
+	res.render('./cmsi185/notes/commentsAndCleanCode', {title: 'Comments and Clean Code'});
+})
+
 /* GET homework1 page. */
 router.get('/cmsi185/homework/1', function(req, res) {
 	res.render('./cmsi185/homework/homework1', {title: 'Homework 1'});

@@ -1,0 +1,54 @@
+extends ../../lmuLayout
+
+block content
+  h1= title
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") Iteration
+      p Iteration is repeating a process. In terms of writing code, iteration is
+        | repeating a portion of code until we're satisfied with the state of our program.
+      p JavaScript has four kinds of loops available for us to use:
+      p(class="indent") &#8226 while, do/while, for, and for/in
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") While loops
+      p While loops are useful for when you want to repeat a block of code until some condition becomes true.
+      br
+      p Code in a while loop will be executed 0 or more times
+      p(class="indent")
+        img(src="/images/while.png")
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") Do-While Loops
+      p Do-while loops are used when you want to execute a portion of code at least once, code in a do-while
+        | loop will be executed 1 or more times
+      p(class="indent")
+        img(src="/images/doWhile.png")
+
+
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") For Loops
+      p For-loops have a counter veriable which is initialize and tested before each iteration of
+        | the loop.
+      p(class="indent") &#8226 Initialize - This is a variable that we set to some value before beginning to run the loop
+      p(class="indemt") &#8226 Test - This is a conditional just like in our if-statements. If the test is true, the loop runs
+      p(class="indent") &#8226 Increment - This updates the initialized variable so that we can run the loop an exact number of times
+      p(class="indent")
+        img(src="/images/forLoop.png")
+      br
+      p It is valid to leave any one of these statements out of your for-loop initialization, but the semi-colons between each statement
+        | are still required regardless of the statement being there.
+      p(class="indent")
+        img(src="/images/validForLoop.png")

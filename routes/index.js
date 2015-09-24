@@ -86,6 +86,11 @@ router.get('/cmsi185/courseNotes/loops', function(req, res) {
 	res.render('./cmsi185/notes/loops', {title: 'Iteration and Loops'});
 });
 
+/* GET arrays page*/
+router.get('/cmsi185/courseNotes/arrays', function(req, res) {
+	res.render('./cmsi185/notes/arrays', {title: 'Arrays'});
+});
+
 /* GET homework1 page. */
 router.get('/cmsi185/homework/1', function(req, res) {
 	res.render('./cmsi185/homework/homework1', {title: 'Homework 1'});

@@ -1,0 +1,45 @@
+extends ../../lmuLayout
+
+block content
+  h1= title
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") Declaration
+      p An array is a collection of values. Each value is called an element.
+      p(class="indent") To declare an array, you just need square brackets
+      p(class="indent")
+        img(src="/images/arrays.png")
+      br
+      p We reference elements in arrays by their index; indexing starts at 0.
+      p Arrays in JavaScript are dynamic, so their size can increase and decrease
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") Reading and Writing
+      p You can reference a specific element in an array with square brackets. You can do assignments to
+        | specific indexes, or read from specific indexes
+      p(class="indent")
+        img(src="/images/arrayAccess.png")
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") Built in Functions
+      p There are a lot of JavaScript functions that help us manipulate arrays
+      p(class="indent") &#8226 length - returns the length of an array (property, not a function)
+      p(class="indent") &#8226 split - splits a string on some token and returns an array
+      p(class="indent") &#8226 slice - returns a portion of the array, the original array is not altered
+      p(class="indent") &#8226 concat - concatenates one array onto another, the original array is not altered
+      p(class="indent") &#8226 join - joins the elements of an array on some token, returns a string
+      p(class="indent") &#8226 reverse - reverses the elements in an array, the original array is altered
+      p(class="indent") &#8226 push - adds an element to the end of an array
+      p(class="indent") &#8226 pop - removes an element from the end of an array
+      p(class="indent") &#8226 unshift - adds an element to the beginning of an array
+      p(class="indent") &#8226 shift - removes an element from the beginning of an array
+      p(class="indent") &#8226 sort - sorts the elements in an array, the original array is altered

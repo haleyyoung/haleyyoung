@@ -1,0 +1,29 @@
+extends ../../lmuLayout
+
+block content
+  h1= title
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") Declaration
+      p An object is another type in JavaScript. Anything that is not a string, number, 
+        | boolean, null or undefined is an object.
+      p An object is a collection of properties. Each property has a name and a value.
+      p(class="indent") To declare an object, you need curly brackets.
+      p(class="indent")
+        img(src="/images/objects.png")
+      br
+      p Unlike all the other primitive types in JavaScript, object values are not the object itself,
+        | but rather a reference to that object.
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") Reading and Writing
+      p You can access a specific property in an object with the dot notation or square brackets. You can alter 
+        | property values or access property values.
+      p(class="indent")
+        img(src="/images/objectAccess.png")

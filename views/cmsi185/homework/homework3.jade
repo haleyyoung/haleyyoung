@@ -1,0 +1,63 @@
+extends ../../lmuLayout
+
+block content
+  h1= title
+
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") Instructions
+      p Type up your solutions. For questions involving code, save your code in a JSFiddle and 
+      | email me the JSFiddle URL as well as put the code in your hard copy.
+      br
+      p Make sure to test all user input for valid input.
+      p Points will be taken off for code that does not do what the question asked, for unclean code, and for 
+        | code that accepts invalid input.
+      br
+      p Due October 8th
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      p 1. Write a program that takes in a string and returns its pig latin translation.
+      p ex: Coding is awesome &#8594 odingcay siay wesomeaay
+      br
+
+      p 2. Write a program that takes in an array of nouns and replaces each noun with its possessive version.
+      p ex: ["dog", "Suzy", "table", "Gus"] &#8594 ["dog's", "Suzy's", "table's", "Gus'"]
+      br
+
+      p 3. What does this code print? And why?
+      p(class="indent") a. 
+        a(href="https://jsfiddle.net/yds4hktx/") Code
+      p(class="indent")
+          img(src="/images/unexpectedResult1.png")
+      p(class="indent") b. 
+        a(href="https://jsfiddle.net/yds4hktx/1") Code
+      p(class="indent")
+          img(src="/images/unexpectedResult2.png")
+      p(class="indent") c. 
+        a(href="https://jsfiddle.net/yds4hktx/2") Code
+      p(class="indent")
+          img(src="/images/unexpectedResult3.png")
+      br
+
+      p 4. Create an object in JavaScript that represents each of these real-life objects, then draw the object in the 
+        | way we have drawn objects in class.
+      p(class="indent") a. A shoe
+      p(class="indent") b. A backpack, this should also include an array of its contents
+      p(class="indent") c. A single Starbucks, be sure to include its location
+      p(class="indent") d. A car
+      p(class="indent") e. A garage, which contains the car from part d.
+      br
+
+      p 5. Write a program that creates a student with null-valued properties. You should have an object for each class, 
+        | and an object representing the student's schedule. The student object should also contain the student's 
+        | year (class standing), GPA, birth date, gender, major, and minor(s).
+      p Once the empty student object is created, you should store values in each of the properties based on a user's input.
+      br
+
+      p 6. Write a program that asks a user for a whole number and determines if that number is prime.

@@ -96,6 +96,11 @@ router.get('/cmsi185/courseNotes/objects', function(req, res) {
 	res.render('./cmsi185/notes/objects', {title: 'Objects'});
 });
 
+/* GET functions page*/
+router.get('/cmsi185/courseNotes/functions', function(req, res) {
+	res.render('./cmsi185/notes/functions', {title: 'Functions'});
+});
+
 /* GET homework1 page. */
 router.get('/cmsi185/homework/1', function(req, res) {
 	res.render('./cmsi185/homework/homework1', {title: 'Homework 1'});
@@ -109,6 +114,11 @@ router.get('/cmsi185/homework/2', function(req, res) {
 /* GET homework3 page. */
 router.get('/cmsi185/homework/3', function(req, res) {
 	res.render('./cmsi185/homework/homework3', {title: 'Homework 3'});
+});
+
+/* GET homework4 page. */
+router.get('/cmsi185/homework/4', function(req, res) {
+	res.render('./cmsi185/homework/homework4', {title: 'Homework 4'});
 });
 
 

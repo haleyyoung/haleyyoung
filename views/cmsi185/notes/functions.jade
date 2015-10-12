@@ -1,0 +1,54 @@
+extends ../../lmuLayout
+
+block content
+  h1= title
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") What is a function?
+      p A function is a block of code that carries out a specific computation.
+      p(class="indent") - A function takes in arguments and can use those arguments 
+        | for its computation
+      p(class="indent") - A function can return some value or result
+      p &#8226 Functions are useful because a function can be written once, but used multiple times.
+      p &#8226 Functions are objects
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") Syntax
+      p To write a function, you can do a regular variable declaration or you can use the function keyword
+      br
+      p(class="indent")
+        img(src="/images/functionDeclaration.png")
+      p To call a function, you use the function name with parentheses including the required arguments 
+        | for that function
+      br
+      p(class="indent")
+        img(src="/images/functionCall.png")
+      br
+      p Each function should be prefixed with a comment that describes what the function does.
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") Testing the arguments
+      p Just like we have to test user input, we also have to test the arguments that are given to a 
+        | function to make sure they can actually be used properly.
+      p The convention for dealing with invalid arguments in functions is to throw an exception
+      p(class="indent")
+        img(src="/images/functionException.png")
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") Scope
+      p In JavaScript, there are two types of variables, global variables and local variables
+      p &#8226 When it comes to functions, local variables are those that are defined within a function
+      p(class="indent") - A local variable cannot be accessed outside of its scope (or function in this context)
+      p &#8226 Global variables are those that are defined at the highest level in a program
+      p(class="indent") - A global variable can be accessed from anywhere within a program

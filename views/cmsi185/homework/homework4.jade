@@ -1,0 +1,63 @@
+extends ../../lmuLayout
+
+block content
+  h1= title
+
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") Instructions
+      p Type up your solutions. For questions involving code, save your code in a JSFiddle and 
+      | email me the JSFiddle URL as well as put the code in your hard copy.
+      br
+      p Make sure to test all arguments for valid input.
+      p Points will be taken off for code that does not do what the question asked, for unclean code, and for 
+        | code that accepts invalid input.
+      br
+      p Due October 20th
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      p 1. Write a function named 
+        b reverse 
+        | which takes in an array and reverses its elements in place.
+      p(class="indent") ex: [1, true, "cat", "dog", 433, 29.3, null] &#8594 [null, 29.3, 433, "dog", "cat", true, 1]
+      br
+
+      p 2. Write a function named 
+        b totalWithTax 
+        | which takes in two arguments, an amount of money and a tax rate and returns the proper total.
+      p
+        b You can assume the amount of money to be a simple float, no need to parse off a '$'. That is all you
+          | can assume.
+      p(class="indent") ex: Putting in 10.0 will result in getting 12.0 back from totalWithTax
+      br
+
+      p 3. Write a function named 
+        b perfectCube 
+        | which takes in a whole number and returns whether or not it's a perfect cube
+      p(class="indent") ex: Putting in 27 will result in getting true back from perfectCube
+      br
+
+      p 4. Write a program which asks a user for 6 sets of at least one number, then stores each of
+        | those sets as an array in a larger array. Then, that array is passed to a function named 
+        b findMax 
+        | which finds the maximum value within that array and returns the maximum value.
+        | Then log each of those results in the console.
+        p
+          b You can assume the user will put in a list separated by ", " (comma space). That is 
+            | the only thing you can assume
+      p(class="indent") ex: The user puts in "33, 12, 99", "123, 456, 789, 1011", "1", "543, 3247, 4, 686, 434",
+        | "44, 11", "3457, 753, 44, 29.4"
+      p(class="indent") You store the values in this form:
+      p(class="indent") [[33, 12, 99], 
+      p(class="indent") [123, 456, 789, 1011], 
+      p(class="indent") [1], 
+      p(class="indent") [543, 3247, 4, 686, 434], 
+      p(class="indent") [44, 11], 
+      p(class="indent") [3457, 753, 44, 29.4]]
+      p(class="indent") And they will then see: 99, 1011, 1, 3247, 44, 3457

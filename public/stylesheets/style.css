@@ -9,11 +9,11 @@
 
 @font-face {
   font-family: 'textFont';
-  src: url('A little sunshine.ttf'); /* IE9 Compat Modes */
-  src: url('./A little sunshine.ttf?#iefix') format('truetype'), /* IE6-IE8 */
-  url('./A little sunshine.ttf') format('truetype'), /* Modern Browsers */
-  url('./A little sunshine.ttf')  format('truetype'), /* Safari, Android, iOS */
-  url('A little sunshine.ttf#textFont') format('ttf'); /* Legacy iOS */
+  src: url('kosalsay.ttf'); /* IE9 Compat Modes */
+  src: url('./kosalsay?#iefix') format('truetype'), /* IE6-IE8 */
+  url('./kosalsay.ttf') format('truetype'), /* Modern Browsers */
+  url('./kosalsay.ttf')  format('truetype'), /* Safari, Android, iOS */
+  url('kosalsay.ttf#textFont') format('ttf'); /* Legacy iOS */
 }
 
 body {

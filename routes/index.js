@@ -36,6 +36,11 @@ router.get('/cmsi185/syllabus', function(req, res) {
 	res.render('./cmsi185/syllabus', {title: 'Syllabus'});
 });
 
+/* GET evaluation page. */
+router.get('/cmsi185/evaluation', function(req, res) {
+	res.render('./cmsi185/evaluation', {title: 'Midterm Evaluation'});
+});
+
 /* GET course notes page. */
 router.get('/cmsi185/courseNotes', function(req, res) {
 	res.render('./cmsi185/courseNotes', {title: 'Course Notes'});
@@ -99,6 +104,11 @@ router.get('/cmsi185/courseNotes/objects', function(req, res) {
 /* GET functions page*/
 router.get('/cmsi185/courseNotes/functions', function(req, res) {
 	res.render('./cmsi185/notes/functions', {title: 'Functions'});
+});
+
+/* GET unit testing page*/
+router.get('/cmsi185/courseNotes/unitTesting', function(req, res) {
+	res.render('./cmsi185/notes/unitTesting', {title: 'Unit Testing'});
 });
 
 /* GET homework1 page. */

@@ -1,0 +1,37 @@
+extends ../../lmuLayout
+
+block content
+  h1= title
+
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") What's the point?
+      p The purpose of unit testing is to make sure that your code works in all possible scenarios.
+      br
+      p The last thing you want is for your code to break unexpectedly when a user tries to utilize it.
+
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") What are corner cases?
+      p Corner cases are those cases that you don't think of when first creating your algorithm.
+        | They're the unexpected input.
+      br
+      p Should it be accepted? Should it cause an error? Should it just cause a warning?
+      br
+      p What are some examples of edge cases?
+      p(class="indent") Arguments:
+      p(class="indent") &#8226 Strings when expecting numbers
+      p(class="indent") &#8226 Numbers when expecting strings
+      p(class="indent") &#8226 Negative numbers
+      p(class="indent") &#8226 Floats
+      p(class="indent") &#8226 Numbers out of certain boundaries
+      p(class="indent") &#8226 Infinity
+      p(class="indent") &#8226 null
+      p(class="indent") &#8226 undefined
+      p(class="indent") &#8226 The empty string

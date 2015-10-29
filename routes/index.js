@@ -111,6 +111,11 @@ router.get('/cmsi185/courseNotes/unitTesting', function(req, res) {
 	res.render('./cmsi185/notes/unitTesting', {title: 'Unit Testing'});
 });
 
+/* GET recursion page*/
+router.get('/cmsi185/courseNotes/recursion', function(req, res) {
+	res.render('./cmsi185/notes/recursion', {title: 'Recursion'});
+});
+
 /* GET homework1 page. */
 router.get('/cmsi185/homework/1', function(req, res) {
 	res.render('./cmsi185/homework/homework1', {title: 'Homework 1'});
@@ -131,5 +136,9 @@ router.get('/cmsi185/homework/4', function(req, res) {
 	res.render('./cmsi185/homework/homework4', {title: 'Homework 4'});
 });
 
+/* GET homework5 page. */
+router.get('/cmsi185/homework/5', function(req, res) {
+	res.render('./cmsi185/homework/homework5', {title: 'Homework 5'});
+});
 
 module.exports = router;

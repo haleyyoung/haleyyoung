@@ -1,0 +1,52 @@
+extends ../../lmuLayout
+
+block content
+  h1= title
+
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") Instructions
+      p Type up your solutions. For questions involving code, save your code in a JSFiddle and 
+      | email me the JSFiddle URL as well as put the code in your hard copy.
+      br
+      p Make sure to test all arguments for valid input.
+      p Points will be taken off for code that does not do what the question asked, for unclean code, and for 
+        | code that accepts invalid input.
+      br
+      p Due November 5th
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      p 1. Write a function named 
+        b fibonacciIterative 
+        | which takes in one argument, a whole number, say n, and returns the nth number in the Fibonacci sequence.
+      p Use an 
+        b iterative 
+        | approach.
+      p(class="indent") ex: fibonacciIterative(5) --> 13 and fibonacciIterative(8) --> 3
+      p We're going to assume the first two numbers in the Fibonacci sequence are 0 and 1.
+      br
+
+      p 2. Write a function named 
+        b fibonacciRecursive 
+        | which takes in one argument, a whole number, and returns the nth number in the Fibonacci sequence.
+      p Use a 
+        b recursive 
+        | approach.
+      br
+
+      p 3. Write a function named 
+        b propertySearch 
+        | which takes in one argument, an object. This function will determine if the object
+        | has a property named "numberOfProperties". If the object does contain this property, 
+        | propertySearch returns true. Otherwise, property search 
+        b copies 
+        | the object, adds the property and returns the new object
+      p(class="indent") ex: propertySearch({color: "red", size: 4, numberOfProperties: 3}) --> true
+      p(class="indent")     propertySearch({dog: "Bark", cat: "Meow", fish: "Blub blub"}) -->
+        | {dog: "Bark", cat: "Meow", fish: "Blub blub", numberOfProperties: 4}

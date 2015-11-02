@@ -116,6 +116,11 @@ router.get('/cmsi185/courseNotes/recursion', function(req, res) {
 	res.render('./cmsi185/notes/recursion', {title: 'Recursion'});
 });
 
+/* GET HTML page*/
+router.get('/cmsi185/courseNotes/webPages', function(req, res) {
+	res.render('./cmsi185/notes/webPages', {title: 'Web Pages'});
+});
+
 /* GET homework1 page. */
 router.get('/cmsi185/homework/1', function(req, res) {
 	res.render('./cmsi185/homework/homework1', {title: 'Homework 1'});

@@ -1,0 +1,63 @@
+extends ../../lmuLayout
+
+block content
+  h1= title
+
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") HTML
+      p HyperText Markup Language
+      br
+      p When it comes to creating a web page, there are three parts:
+      p(class="indent") 1. The content to be displayed. The WHAT - HTML
+      p(class="indent") 2. What the content will look like - CSS
+      p(class="indent") 3. How to make the content DO something - JavaScript
+      br
+      p An HTML document is made up of a head and a body.
+      p Everything in HTML is defined within tags
+      br
+      img(src="/images/htmlHead.png")
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") HTML Tags
+      p Tags define how the content should be displayed on the page
+      p They require an open tag and a closing tag.
+      p The specifications for the tag are called attributes and are contained within 
+        | the opening tag
+      p The content to be displayed is placed between the two tags.
+      br
+      p
+        img(src="/images/tags.png")
+      br
+      p Some tags are self closing:
+      p(class="indent") &#8226 meta
+      p(class="indent") &#8226 break
+      p(class="indent") &#8226 image
+      p(class="indent") &#8226 input
+      br
+      p Here's a 
+        a(href= "http://www.w3schools.com/tags/" target="_blank") list
+        |  of HTML tags
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") CSS
+      p Cascading Style Sheets
+      br
+      p CSS consists of selectors, and declarations
+      p A declaration is a property name followed by a property value
+      br
+      p
+        img(src="/images/css.png")
+      br
+      p Here's a 
+        a(href="http://www.w3schools.com/cssref/" target="_blank") list
+        |  of CSS property names and possible values to choose from

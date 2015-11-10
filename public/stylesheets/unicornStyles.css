@@ -1,0 +1,27 @@
+body {
+	background: #EABFD4;
+	color: white;
+}
+
+#inner-content {
+	background: #1F1F14;
+	border: 3px dotted;
+	padding: 10%;
+	margin: 10%;
+	text-align: center;
+}
+
+a {
+	font-weight: 800;
+	color: red;
+	text-decoration: none;
+}
+
+a:hover {
+	color: magenta;
+}
+
+ul {
+	margin-left: 30%;
+	text-align: left;
+}

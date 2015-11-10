@@ -121,6 +121,11 @@ router.get('/cmsi185/courseNotes/webPages', function(req, res) {
 	res.render('./cmsi185/notes/webPages', {title: 'Web Pages'});
 });
 
+/* GET example HTML page*/
+router.get('/cmsi185/unicorn', function(req, res) {
+	res.render('./cmsi185/notes/unicorn', {title: 'Example Web Page'});
+});
+
 /* GET homework1 page. */
 router.get('/cmsi185/homework/1', function(req, res) {
 	res.render('./cmsi185/homework/homework1', {title: 'Homework 1'});

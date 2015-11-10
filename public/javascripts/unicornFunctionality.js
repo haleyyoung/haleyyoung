@@ -10,7 +10,7 @@ $(document).ready(function(){
     		7: "#A366FF",
     		8: "#CC33FF",
     		9: "#FF0066",
-    		10: "url('rainbow.jpg')"
+    		10: "url('/images/rainbow.jpg')"
     	};
         var rating = $("#rating").val();
         console.log(rating);

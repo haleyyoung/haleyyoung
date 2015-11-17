@@ -1,0 +1,121 @@
+extends ../../lmuLayout
+
+block content
+  h1= title
+
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") Instructions
+      p Type up your solutions.
+      br
+      p Type up your solutions. For questions involving code, save your code in a JSFiddle and 
+      | email me the JSFiddle URL as well as put the code in your hard copy.
+      br
+      p Make sure to test all arguments for valid input.
+      p Points will be taken off for code that does not do what the question asked, for unclean code, and for 
+        | code that accepts invalid input.
+      br
+      p Due December 1st
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      p 1. Create a constructor which creates an 
+        b Astronaut
+        |  object upon being called. 
+      p(class="indent") A new Astronaut should be created like this:
+      p(class="indent") new Astronaut("Pocahontas", "female", 16, 115). 
+      p(class="indent") Your prototype should create an empty array for favoriteFoods.
+      p Your constructor should have
+      p(class="indent") a. Basic properties:
+      p(class="indent") &#8226 name
+      p(class="indent") &#8226 gender
+      p(class="indent") &#8226 age
+      p(class="indent") &#8226 weightOnEarth
+      p(class="indent") &#8226 favoriteFoods - an array of their favorite foods, from favorite (index 0) to least favorite
+      p(class="indent") b. Built in functions:
+      p(class="indent") &#8226 
+        b localWeight
+        |  - which takes in 1 argument, the local planet and returns the 
+        | astronaut's weight on that planet. Include all functionality for planets. Yes, Pluto counts as a planet
+      p(class="indent") ex: localWeight("pluto") returns 8.7 // If your weight is 145lbs on Earth
+      p(class="indent") ex: localWeight("earth") returns 145 // If your weight is 145lbs on Earth
+      p(class="indent") Use this table for weight reference:
+      table(id="planet-table")
+        thead
+          tr
+            th Planet
+            th Gravity Relative to Earth
+        tbody
+          tr
+            td Sun
+            td 27.9
+          tr
+            td Mercury
+            td 0.38
+          tr
+            td Venus
+            td 0.91
+          tr
+            td Earth
+            td 1
+          tr
+            td Moon
+            td 0.17
+          tr
+            td Mars
+            td 0.38
+          tr
+            td Jupiter
+            td 2.54
+          tr
+            td Saturn
+            td 1.08
+          tr
+            td Uranus
+            td 0.91
+          tr
+            td Neptune
+            td 1.19
+          tr
+            td Pluto
+            td 0.06
+      p(class="indent") &#8226 
+        b topXFoods
+        |  - which takes in 1 argument and returns the top x foods on 
+        | that astronaut's favorite foods list
+      p(class="indent") ex: topXFoods(3) returns ["ice cream", "zucchini", "lollipops"] if those
+        | are your astronaut's favorite foods.
+      p(class="indent") &#8226 
+        b canFit
+        |  - which takes in 5 arguments: length, width, height (of the compartment in inches), 
+        | maxLoad (in pounds on Earth), and an array of objects. And returns a boolean
+      p(class="indent") Each astronaut gets a personal belongings compartment.
+      p(class="indent") Ex: If it is 4ft x 5ft x 11ft and can hold a maximum of 100lbs (on Earth), 
+        | the function call will look like this:
+      p(class="indent") canFit(48, 60, 132, 100, [{...}, {...}])
+      p(class="indent") Make sure their belongings 
+        b as a cohesive group (structure can be malleable to simplify this problem) 
+        | -each object has properties weightOnEarth and volume- 
+        |  will fit in the compartment (volume-wise and weight-wise)
+      p(class="indent") &#8226 
+        b spaceName
+        |  which takes in zero arguments returns your astronaut's space name. A space name is defined to be 
+        | two English letters followed by an alien-robot noise, in a specific order: "beep", "boop", "bop". 
+        | Each new word starts the sequence over again.
+      p(class="indent") ex: spaceName() returns Pobeepcaboophobopntbeepasboop Wibeepndboop Lebeepafboop 
+        | // If your astronaut's name is Pocahontas Wind Leaf
+
+      br
+
+      p 2. Write unit tests for your prototype. Each function should have at least 5 unit tests. Other
+        | properties' unit tests are up to your discretion on what it means to fully test your prototype.
+      p(class="indent") I will be writing my own unit tests, make sure to cover all corner cases so you
+        | pass all of my unit tests.
+      br
+
+      p 3. Draw your prototype with the object drawing method from class.

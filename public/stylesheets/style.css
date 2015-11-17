@@ -162,3 +162,13 @@ object {
   margin-left: auto;
   margin-right: auto;
 }
+
+#planet-table {
+  margin-left: 10%;
+  width: 65%;
+  text-align: left;
+}
+
+#planet-table tr td, #planet-table th {
+  padding-left: 10%;
+}

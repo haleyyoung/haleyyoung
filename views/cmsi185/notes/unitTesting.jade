@@ -44,8 +44,11 @@ block content
       p A good unit testing framework is 
         a(href="https://qunitjs.com/" target="_blank") QUnit
       br
-      p A unit test should consist of two things: a call to your code and an assertion of what the expected
-        | output is.
+      p A unit test should consist of two things: 
+        ol
+          li a call to your code to get the actual output
+          li and the expected output
+        | This wil all be wrapped in an assertion.
       p Your assertion can do one of many things, for example, test for equality, inequality, error throwing, etc. 
         | Here is the 
         a(href="http://api.qunitjs.com/category/all/" target="_blank") documentation 

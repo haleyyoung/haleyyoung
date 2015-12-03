@@ -1,0 +1,40 @@
+extends ../../lmuLayout
+
+block content
+  h1= title
+
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") Instructions
+      p Type up your solutions.
+      br
+      p Type up your solutions. For questions involving code, save your code and 
+      | email me the files as well as put the code in your hard copy.
+      br
+      p Make sure to test all arguments for valid input.
+      p Points will be taken off for code that does not do what the question asked, for unclean code, and for 
+        | code that accepts invalid input.
+      br
+      p Due December 10th
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      p 1. Create an HTML page using canvas and JavaScript which implements 
+        a(href="https://www.youtube.com/watch?v=iI-RY8ducRc&t=29") this 
+        | general idea. You may use whatever shape you like and it does not have to change 
+        | colors upon "corner bounce". Just make an object bounce off your canvas edges with 
+        | the behavior shown in the video.
+      br
+      p Make sure to create your shape with a constructor.....for example, new Rectangle(0,0,10,10) would create 
+        | a new rectangle in the top left corner of your canvas with width and height 10. This allows for us to create
+        | multiple instances of your shape to bouce if we want (which you can implement if you'd like).
+      br
+      p Separate the drawing of your shape and the animation into to separate functions.
+      br
+      p Turn in separate HTML, CSS, and JS files in a ziped folder. Submissions with broken 
+      | file references will not be graded.

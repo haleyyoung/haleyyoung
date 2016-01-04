@@ -14,19 +14,13 @@ html
     nav(class="navbar navbar-default navbar-fixed-top" role="navigation")
       div(class="container")
         ul(class="nav navbar-nav")
+
           if title == "Haley Young"
             li(class="nav-link selected")
-              a(href="/") Home
+              a(href="/aboutMe") Home
           else
             li(class="nav-link")
-              a(href="/") Home
-
-          if title == "About Me"
-            li(class="nav-link selected")
-              a(href="/aboutMe") About Me
-          else
-            li(class="nav-link")
-              a(href="/aboutMe") About Me
+              a(href="/aboutMe") Home
 
           if title == "Resume"
             li(class="nav-link selected")

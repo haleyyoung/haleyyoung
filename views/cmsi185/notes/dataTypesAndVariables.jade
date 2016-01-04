@@ -7,13 +7,14 @@ block content
     div
     .panel-body
       h2(class="project-title") JavaScript's data types are:
-      p(class="indent") &#8226 Booleans - true/false
-      p(class="indent") &#8226 Numbers - integers, floating point numbers, hexadecimal, binary, octal, NaN
-      p(class="indent") &#8226 Strings - characters, words, sentences, etc.
-      p(class="indent") &#8226 Special types - null, undefined
-      p(class="indent") &#8226 Objects
-      p(class="indent") &#8226 Arrays
-      p(class="indent") &#8226 Functions
+      ul(class="indent")
+        li Booleans - true/false
+        li Numbers - integers, floating point numbers, hexadecimal, binary, octal, NaN
+        li Strings - characters, words, sentences, etc.
+        li Special types - null, undefined
+        li Objects
+        li Arrays
+        li Functions
 
   div
   .panel.panel-default.content.project-div
@@ -158,3 +159,13 @@ block content
           td while
         tr
           td with
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") JavaScript Type Coercion
+      p Null and Undefined
+      ul
+        li When you declare a varaible, but don't initialize it, its value becoes undefined
+        li Undefined is also its own type, whereas, null is considered an object

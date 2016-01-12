@@ -1,0 +1,26 @@
+extends ../../lmuLayout
+
+block content
+  h1= title
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") Installation
+      p You will need to install Java on your computer to write code. This is different from
+        | JavaScript which is conventionally run in your browser.
+      p(class="indent") For Macs, go 
+        a(href="https://java.com/en/download/help/mac_install.xml" target="_blank") here
+      p(class="indent") For Windows, go 
+        a(href="https://www.java.com/en/download/help/windows_manual_download.xml" target="_blank") here
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") A Hello World Program
+      p Copy this code into your own text file. Make sure to name the file 
+        b HelloWorld.java
+      p(class="indent")
+        img(src="/images/cmsi186/helloWorld.png")

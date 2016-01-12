@@ -171,4 +171,14 @@ router.get('/cmsi186/homework', function(req, res) {
 	res.render('./cmsi186/homework', {title: 'Homework', course: 'cmsi186'});
 });
 
+/* GET intro page. */
+router.get('/cmsi186/courseNotes/intro', function(req, res) {
+	res.render('./cmsi186/notes/javaInstallationAndHelloWorld', {title: 'Java Installation and Hello World', course: 'cmsi186'});
+});
+
+/* GET homework1 page. */
+router.get('/cmsi186/homework/1', function(req, res) {
+	res.render('./cmsi186/homework/homework1', {title: 'Homework 1', course: 'cmsi186'});
+});
+
 module.exports = router;

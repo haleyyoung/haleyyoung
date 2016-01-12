@@ -23,6 +23,10 @@ body {
   background-color: #160426;
 }
 
+h1 {
+  width: 65%;
+}
+
 a {
   color: #00B7FF;
 }

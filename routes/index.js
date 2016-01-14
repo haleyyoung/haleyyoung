@@ -176,9 +176,24 @@ router.get('/cmsi186/courseNotes/intro', function(req, res) {
 	res.render('./cmsi186/notes/javaInstallationAndHelloWorld', {title: 'Java Installation and Hello World', course: 'cmsi186'});
 });
 
+/* GET primitive types and declaration page. */
+router.get('/cmsi186/courseNotes/primitiveTypesAndVariableDeclaration', function(req, res) {
+	res.render('./cmsi186/notes/primitiveTypesAndVariableDeclaration', {title: 'Primitive Types and Variable Declaration', course: 'cmsi186'});
+});
+
+/* GET typeGuessing page. */
+router.get('/cmsi186/courseNotes/typeGuessing', function(req, res) {
+	res.render('./cmsi186/notes/typeGuessing', {title: 'Guess The Type', course: 'cmsi186'});
+});
+
 /* GET homework1 page. */
 router.get('/cmsi186/homework/1', function(req, res) {
 	res.render('./cmsi186/homework/homework1', {title: 'Homework 1', course: 'cmsi186'});
+});
+
+/* GET homework2 page. */
+router.get('/cmsi186/homework/2', function(req, res) {
+	res.render('./cmsi186/homework/homework2', {title: 'Homework 2', course: 'cmsi186'});
 });
 
 module.exports = router;

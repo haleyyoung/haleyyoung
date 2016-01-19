@@ -1,0 +1,46 @@
+extends ../../lmuLayout
+
+block content
+  h1= title
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") Strong Typing
+      p(class="indent") Java is strongly typed. This means that types cannot be mixed in expressions 
+        | and/or statements. But there is a way to get around this in cases in which it's appropriate. 
+        | It's called 
+        b type casting.
+      p(class="indent") In general, type casting can be achieved by putting the target type in parens 
+        | before the thing you're casting.
+      p(class="indent")
+        img(src="/images/cmsi186/typeCasting.png")
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") Type Promotion in Expressions
+      p When doing math, Java will promote primitive types where necessary to complete its 
+        | computations.
+      p(class="indent") This means that in expressions involving types char, byte or short, all 
+        | operands are promoted to 
+        b int.
+      p(class="indent") If there are any longs in the expression, all operands are promoted to 
+        b long.
+      p(class="indent") If there are any floats in the expression, all operands are promoted to 
+        b float.
+      p(class="indent") If there are any doubles in the expression, all operands are promoted to 
+        b double.
+      br
+      p This means that if you're planning on storing your expression's result in a variable, you 
+        | might have to cast the result to the right type.
+      p Also note that the types of the operands are not affected outside of that expression.
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") Java Operators and Precedence
+      p Java operators are pretty standard. Here is Java's 
+        a(href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/operators.html#nutsandbolts-precedence" target="_blank") operator precedence

@@ -1,0 +1,125 @@
+extends ../../lmuLayout
+
+block content
+  h1= title
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") What is a control statement?
+      p(class="indent") In Java, a control statement is a statement which alters the path of the program. 
+        | Think of it like a fork in the road or like a round-about. In Java, there are selection statements, 
+        | iteration statements and jump statements.
+      br
+      p(class="indent")
+        b Selection statements:
+        ul
+          li If statements
+          li Switch statements
+      p(class="indent")
+        b Iteration statements:
+        ul
+          li For loops
+          li While loops
+          li Do-while loops
+      p(class="indent")
+        b Jump statements:
+        ul
+          li Break statements
+          li Continue statements
+          li Return statements
+
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") The If-Statement
+      p The If-statement allows the computer to execute a block of code based on a condition.
+      p(class="indent")
+        img(src="/images/cmsi186/ifStatement.png")
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") The Switch
+      p A switch statement takes in a variable and compares it to each case. It then runs the code in the 
+        | first case that's satisfied.
+      p(class="indent")
+        img(src="/images/cmsi186/switchStatement.png")
+      p(class="indent")
+        ul
+          li The variable which is contained in the switch declaration can be of type: byte, short, int, char or String.
+          li Each case can only contain one value, multi-option cases are not supported.
+          li If you don't include a break in each case, the interpreter will fall through 
+            | to the next case without checking subsequent conditions.
+          li The default case is optional.
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") While loops
+      p While loops are useful for when you want to repeat a block of code until some condition becomes false.
+      br
+      p Code in a while loop will be executed 0 or more times
+      p(class="indent")
+        img(src="/images/cmsi186/while.png")
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") Do-While Loops
+      p Do-while loops are used when you want to execute a portion of code at least once, code in a do-while
+        | loop will be executed 1 or more times
+      p(class="indent")
+        img(src="/images/cmsi186/doWhile.png")
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") For Loops
+      p For-loops have a counter variable which is initialized once and tested before each iteration of
+        | the loop.
+      p(class="indent")
+        ul
+          li Initialize - This is a variable that we set to some value before beginning to run the loop
+          li Test - This is a conditional just like in our if-statements. If the test is true, the loop runs
+          li Increment - This updates the initialized variable so that we can run the loop an exact number of times
+      p(class="indent")
+        img(src="/images/cmsi186/forLoop.png")
+      br
+      p It is valid to leave any one of these statements out of your for-loop initialization, but the semi-colons between each statement
+        | are still required regardless of the statement being there.
+      p(class="indent")
+        img(src="/images/cmsi186/validForLoop.png")
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") Scope
+      p At a high level, the term scope means: what parts of my code can see what variables? For now, we can assume that 
+        | each block creates a new scope.
+      p(class="indent")
+        img(src="/images/cmsi186/scopeExample.png")
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") Jump Statements
+      p The 
+        b break
+        |  statement can be used to break the program out of its current scope and continue with the 
+        | next line of code in the next scope.
+      p The 
+        b continue
+        |  statement can be used inside of iteration loops to break out of the current iteration 
+        | but not the entire loop.
+      p The 
+        b return
+        |  statement can be used to give a result back from a method.

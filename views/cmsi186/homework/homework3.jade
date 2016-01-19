@@ -1,0 +1,49 @@
+extends ../../lmuLayout
+
+block content
+  h1= title
+
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") Instructions
+      p Type up your solutions. For questions involving code, save your code in a .java file and  
+        | upload it to your GitHub repository. Each question should be in its own file. Also, remember 
+        | to put your code in a folder called "homeworkx" where x is the assignment number. All lowercase 
+        | folder names please!
+        br
+        br
+      p Due January 19th
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      p 1. Create your 
+        a(href="http://github.com" target="_blank") GitHub
+        |  account. Email me the email with which you signed up, once you have signed up. 
+        | I will send you an invitation to a private repository where you will upload your homework assignments. 
+        | This assignment should be uploaded to GitHub. No need to print anything.
+      br
+
+      p 2. Write a program which determines the least common multiple of two numbers. Your program should print 
+        | out the two numbers and their least common multiple in some sentence. Make sure that your code would 
+        | work for any two positive numbers, but you may hard code two values since we haven't learned how to 
+        | take in user input yet.
+      br
+
+      p 3. Write a program which determines if a character is in the first half or second half of the alphabet. 
+        | Then from there, whether or not it's in the first or second quarter, or third or fourth quarter. 
+        | Then from there, whether or not it's in the first or second eighth according to each of those quarters.
+      p You must handle each sub-problem on its own. So three sub-problems should be solved.
+        | Your program should print out the result of your computations. You may hard code a value for the character, 
+        | but your code should be able to work for any letter.
+      p(class="indent") ex: For 'a', your pogram should print something along the lines of: 
+        br
+        | 'a' is in the first half of the alphabet
+        br
+        | 'a' is in the first quarter of the alphabet
+        br
+        | 'a' is in the first eighth of the alphabet

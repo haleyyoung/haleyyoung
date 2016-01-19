@@ -186,6 +186,16 @@ router.get('/cmsi186/courseNotes/typeGuessing', function(req, res) {
 	res.render('./cmsi186/notes/typeGuessing', {title: 'Guess The Type', course: 'cmsi186'});
 });
 
+/* GET type casting page. */
+router.get('/cmsi186/courseNotes/typeCasting', function(req, res) {
+	res.render('./cmsi186/notes/typeCasting', {title: 'Type Casting', course: 'cmsi186'});
+});
+
+/* GET control statments page. */
+router.get('/cmsi186/courseNotes/controlStatements', function(req, res) {
+	res.render('./cmsi186/notes/controlStatements', {title: 'Control Statements', course: 'cmsi186'});
+});
+
 /* GET homework1 page. */
 router.get('/cmsi186/homework/1', function(req, res) {
 	res.render('./cmsi186/homework/homework1', {title: 'Homework 1', course: 'cmsi186'});
@@ -194,6 +204,11 @@ router.get('/cmsi186/homework/1', function(req, res) {
 /* GET homework2 page. */
 router.get('/cmsi186/homework/2', function(req, res) {
 	res.render('./cmsi186/homework/homework2', {title: 'Homework 2', course: 'cmsi186'});
+});
+
+/* GET homework2 page. */
+router.get('/cmsi186/homework/3', function(req, res) {
+	res.render('./cmsi186/homework/homework3', {title: 'Homework 3', course: 'cmsi186'});
 });
 
 module.exports = router;

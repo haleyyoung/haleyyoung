@@ -1,0 +1,33 @@
+extends ../../lmuLayout
+
+block content
+  h1= title
+
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") Instructions
+      p Type up your solutions. For questions involving code, save your code in a .java file and  
+        | upload it to your GitHub repository. Each question should be in its own file. Also, remember 
+        | to put your code in a folder called "homeworkx" where x is the assignment number. All lowercase 
+        | folder names please!
+        br
+        br
+      p Due January 26th
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      p 1. Write a program which takes in a string from the command line which is assumed to be a binary number 
+        | represented as a string. Your program will print out the decimal conversion for the binary number provided.
+      p(class="indent") Make sure not to accept input that contains characters other than '0' and '1'. At this point, 
+        | printing out a statement that let's the user know their input was not valid binary is fine. Your program should 
+        | not continue after that point.
+      br
+
+      p 2. Write a program which takes in a year from the command line and determines if that year is a leap year. You 
+        | may not use Java's built in Calendar methods. Your program should print out true or false.
+      p(class="indent") Make sure to research the definition of a leap year.

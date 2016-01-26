@@ -1,0 +1,106 @@
+extends ../../lmuLayout
+
+block content
+  h1= title
+
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") Instructions
+      p Type up your solutions. For questions involving code, save your code in a .java file and  
+        | upload it to your GitHub repository. Each question should be in its own file. Also, remember 
+        | to put your code in a folder called "homeworkx" where x is the assignment number. All lowercase 
+        | folder names please!
+        br
+        br
+      p Due February 4th
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      p 1. Create a class called DateHelper. Your class should have 3 methods and any other member variables 
+        | you deem appropriate. The three methods should have the following signatures:
+        p(class="indent")
+          ol(type="a")
+            li
+              b public static boolean isLeapYear(long year)
+              br
+              | Just port your code from Homework 4 into this method
+            li
+              b public static boolean isValidDate(long year, long month, long day)
+              br
+              | This method determines if a given date is possibly a real date. For example, February 29th, 2016 is 
+              | valid, but April 31st, 2016 is not.
+            li
+              b public static long daysBetween(long year1, long month1, long day1, long year2, long month2, long day2)
+              br
+              | This method determines the absolute distance between the two days given. For example: 
+              | daysBetween(2016,1,31,2016,2,5) should return 4. daysBetween(2016,1,31,2016,2,5) should ALSO return 4.
+        p(class="indent") We will consider all dates before January 1st 1600 invalid dates. You may not use any of the 
+          | built in Calendar methods or anything related. This class must be constructed from first principles. The 
+          | signature for each method should be defined in the manner displayed above, including parameter order.
+      br
+      p 2. Create a class to display the capabilities of your DateHelper class. It should print to the command line 
+        | your methods' responses to dates defined in this class. Your main method should reside in this class. You 
+        | may put both classes in the same file.
+      br
+      p 3. Create two public classes. One called Card and one called Deck. The first 
+        | Card in a Deck instance is considered the top Card, and the 52nd Card in a 
+        | Deck instance is considered the bottom Card.
+        p(class="indent") The card class will have:
+          ul
+            li integer constants representing the possible suits and ranks.
+            li a constructor which takes in two integers representing a suit and a rank 
+              | and creates a new Card object instance with the given suit and rank.
+              br
+              b public Card(int suit, int rank)
+            li a method getSuit() which returns the suit of the related card
+              br
+              b public int getSuit()
+            li a method getRank() which returns the rank of the related card
+              br
+              b public int getRank()
+            li a method suitToString() which returns the suit of the related card as a String
+              br
+              b public String suitToString()
+            li a method rankToString() which returns the rank of the related card as a String
+              br
+              b public String rankToString()
+            li a method cardToString() which returns the English version of the related card. 
+              | For example, "Queen of Hearts"
+              br
+              b public String cardToString()
+            li a method equals() which determines if the given card has equivalent qualities to 
+              | the related card
+              br
+              b public boolean equals(Card c)
+          br
+        p(class="indent") The Deck class will have:
+          ul
+            li a constructor which constructs a new Deck object instance with 52 cards. One of each 
+              | rank and suit ranging from Ace to King in each of Spades, Hearts, Clubs, and Diamonds
+              br
+              b public Deck()
+            li a method shuffle() which shuffles the Deck in some randomized way
+              br
+              b public void shuffle()
+            li a method cut() which cuts the deck at some random point
+              br
+              b public void cut()
+            li a method cut() which cuts the deck at a specified point
+              br
+              b public void cut(int cutPoint)
+            li a method peekTop() which returns the Card at the top of the deck
+              br
+              b public Card peekTop()
+            li a method peekCardAt() which returns the Card at the specified 
+              | index
+              br
+              b public Card peekCardAt(int index)
+      br
+      p 4. Create a class to display the capabilities of your Card and Deck classes. It should print to the command line 
+        | your methods' responses to Cards and Decks defined in this class. Your main method should reside in this class. 
+        | For problems 3 and 4, put each of your classes in separate .java files.

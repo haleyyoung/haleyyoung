@@ -196,6 +196,11 @@ router.get('/cmsi186/courseNotes/controlStatements', function(req, res) {
 	res.render('./cmsi186/notes/controlStatements', {title: 'Control Statements', course: 'cmsi186'});
 });
 
+/* GET classes and methods page. */
+router.get('/cmsi186/courseNotes/classesAndMethods', function(req, res) {
+	res.render('./cmsi186/notes/classesAndMethods', {title: 'Classes and Methods', course: 'cmsi186'});
+});
+
 /* GET homework1 page. */
 router.get('/cmsi186/homework/1', function(req, res) {
 	res.render('./cmsi186/homework/homework1', {title: 'Homework 1', course: 'cmsi186'});
@@ -214,6 +219,11 @@ router.get('/cmsi186/homework/3', function(req, res) {
 /* GET homework 4 page. */
 router.get('/cmsi186/homework/4', function(req, res) {
 	res.render('./cmsi186/homework/homework4', {title: 'Homework 4', course: 'cmsi186'});
+});
+
+/* GET homework 5 page. */
+router.get('/cmsi186/homework/5', function(req, res) {
+	res.render('./cmsi186/homework/homework5', {title: 'Homework 5', course: 'cmsi186'});
 });
 
 module.exports = router;

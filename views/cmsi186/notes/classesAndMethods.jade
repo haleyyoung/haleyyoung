@@ -1,0 +1,58 @@
+extends ../../lmuLayout
+
+block content
+  h1= title
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") Objects
+      p In Java, if a variable is not of primitive type, it is an Object. There are 
+        | built in objects as well as custom objects can be created.
+      p In Java, objects are passed by reference whereas primitive types are passed 
+        | by value.
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") Classes
+      p A class is a specification of the qualities and capabilities of an object type
+      p A class consists of:
+        ul
+          li one or more constructors
+          li zero or more member variables
+          li zero or more member methods
+      br
+      p A class doesn't physically exist until an instance of that class has been created
+      p One creates an instance of a class by using the keyword 
+        b new
+        | .
+      br
+      p If no constructor is specified in a class, a default one is created by the compiler. 
+        | This constructor will initialize all boolean values to 
+        b false
+        | , all numeric values to 
+        b zero
+        | , and all non primitive types to 
+        b null
+        | .
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") Methods
+      p A method is a block of code which can be used multiple times over from different 
+        | points in your program. A method in Java is declared with a return type, method 
+        | name and a set of parameters.
+      p A method can perform various computations on its related object, but it must ultimately 
+        | return what its signature claims it will return.
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") An example class
+      img(src="/images/cmsi186/class.png")

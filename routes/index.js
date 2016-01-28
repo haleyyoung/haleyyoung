@@ -196,6 +196,11 @@ router.get('/cmsi186/courseNotes/controlStatements', function(req, res) {
 	res.render('./cmsi186/notes/controlStatements', {title: 'Control Statements', course: 'cmsi186'});
 });
 
+
+/* GET classes and methods page. */
+router.get('/cmsi186/courseNotes/packagesAndAccessModifiers', function(req, res) {
+	res.render('./cmsi186/notes/packagesAndAccessModifiers', {title: 'Packages and Access Modifiers', course: 'cmsi186'});
+});
 /* GET classes and methods page. */
 router.get('/cmsi186/courseNotes/classesAndMethods', function(req, res) {
 	res.render('./cmsi186/notes/classesAndMethods', {title: 'Classes and Methods', course: 'cmsi186'});

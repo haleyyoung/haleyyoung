@@ -1,0 +1,56 @@
+extends ../../lmuLayout
+
+block content
+  h1= title
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") Packages
+      p Packages are a way to organize your classes into separate files. And 
+        | among those files, organize those files into packages of classes that 
+        | relate to each other.
+      p(class="indent")
+        ul
+          li In order to create a package, you're going to use the package keyword at 
+            | the top of your file, followed by your package name.
+            br
+            img(src="/images/cmsi186/package.png")
+          li To use a package, you use the import keyword at the top of your file 
+            | followed by the package name and the class you're importing.
+            br
+            img(src="/images/cmsi186/import.png")
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") How to Compile
+      p To compile and run your package and classes that use your package, you 
+        | will need to:
+      p(class="indent")
+        ol
+          li put your files who are part of the package in a folder 
+            | corresponding to the package name
+            br
+            img(src="/images/cmsi186/tree.png")
+          li compile all of the files in your package
+          li compile the files dependent upon your package
+          li run the file containing the main method
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") Access Modifiers
+      p An access modifier speicifies the level to which a class member or class 
+        | can be seen...also known as scope.
+      p Right now, we are only concerned with 
+        b private 
+        | and 
+        b public
+        | .
+      p Private means that a member is only accessible within its own class.
+      p Public means that a member can be accessed by members of its own class as 
+        | well as from other classes.

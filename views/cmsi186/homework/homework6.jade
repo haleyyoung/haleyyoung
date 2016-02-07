@@ -1,0 +1,62 @@
+extends ../../lmuLayout
+
+block content
+  h1= title
+
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") Instructions
+      p Type up your solutions. For questions involving code, save your code in a .java file and  
+        | upload it to your GitHub repository. Each question should be in its own file. Also, remember 
+        | to put your code in a folder called "homeworkx" where x is the assignment number. All lowercase 
+        | folder names please!
+      p Be sure to include your unit tests and lab report along with your code submission. Your 
+        | code, unit tests and lab report should all be in separate files. Save your lab report 
+        | with a .txt extension.
+      p If you're choosing to turn in your homework late (2 day grace period for a 10% deduction), 
+        | please send me an email so I know not to immediately grade your submission.
+        br
+        br
+      p Due February 23rd
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      p 1. Create a class called Clock. Your Clock class should contain the following 
+        | methods:
+        p(class="indent")
+          ol(type="a")
+            li a constructor which constructs a Clock initialized to 00:00:00
+            li
+              b toString() 
+              | which returns a string representation of the Clock's current time.
+            li
+              b adjustTime() 
+              | which updates the Clock instance's time according to a specified number of 
+              | seconds.
+      br
+      p 2. Create a class called ClockAngle. Your ClockAngle class should utilize your 
+        | Clock class and its methods. ClockAngle should have 1 method...overloaded once.
+        ol(type="a" class="indent")
+          li timesWithAngle() 
+            | which finds and prints the times in a 12 hour day with a 
+            i decently 
+            | straight angle (180&#176) 
+            | searching with a time increment of 10 seconds.
+          li timesWithAngle(int angle, int timeDelta) 
+            | which finds and prints the times in a 12 hour day with an angle 
+            i decently equivalent 
+            | to 
+            b angle 
+            | , searching with a time increment of 
+            b timeDelta 
+            | seconds.
+      br
+      p An angle is considered to be 
+        i decently equivalent 
+        | to a speicified angle if it is at a minimum distance from the angle specified,
+        | as discussed in class.

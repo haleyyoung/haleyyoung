@@ -231,4 +231,9 @@ router.get('/cmsi186/homework/5', function(req, res) {
 	res.render('./cmsi186/homework/homework5', {title: 'Homework 5', course: 'cmsi186'});
 });
 
+/* GET homework 6 page. */
+router.get('/cmsi186/homework/6', function(req, res) {
+	res.render('./cmsi186/homework/homework6', {title: 'Homework 6', course: 'cmsi186'});
+});
+
 module.exports = router;

@@ -1,0 +1,69 @@
+Haley Young
+CMSI 186
+February 9, 2016
+
+
+Disney Character Suite Lab Report
+
+
+Problem Description:
+
+The problem stated that we had to create a DisneyCharacter class which had
+functionality equivalent to the following. Our class had to be able to create
+DisneyCharacter instances who had the ability to speak. Our class also had to
+contain a way for the character's qualities to be queried, specifically their
+name, movie(s), friends, and owner (which was to be defined as a constant, namely
+Disney).
+
+
+Problems Encountered:
+
+There were two problems encountered during the design and implementation of this
+class. The first, is that I had originally defined the character's movie to be
+a String, but after assessing Lion King and all of its characters (a corner case),
+I realized that a character could be in more than one movie. To solve this, I could
+have gone one of two directions. I could have concatenated movie names together,
+separated by commas, or I could have declared the character's movie as an array of
+Strings, therefore allowing for multiple movies. I decided to go with the latter
+option as it seemed more object oriented.
+The second problem was that I had instantiated the Disney character's friends array
+in the constructor to have a size of 15. But there are definitely Disney characters
+with more than 15 friends (again a corner case), for example Woody. I have not yet
+figured out how to solve this problem in a dynamic manner. I increased the size of
+the default friends array that was instantiated in the constructor, but I'm sure
+there's a better solution out there for those Disney characters who simply have
+a ton of friends. This is a known bug in my program.
+
+
+Unit Tests:
+
+My unit tests cover the corner cases I mentioned above. They are intended to
+make sure that user input to the constructor and other methods is handled properly.
+I have tried inputting the empty string for a Disney character's name, because
+a Disney character's name should always have at least one character. I have also
+tested and worked around what happens when a character has more friends than the
+friends array allows for. The corner cases I felt were most important were those
+that covered out of bounds issues for arrays and bad input.
+
+
+Known Bugs:
+
+As mentioned above, one known bug in this program is the issue of if a Disney
+character has more than 25 friends (the size of the array instantiated in the
+constructor). Another known bug is that a DreamWorks character could be created
+in the DisneyCharacter class. For example,
+new DisneyCharacter("Toothless", "How to Train Your Dragon", "swwwoooshhhh", false);
+would be accepted, but Toothless is clearly not a Disney character and therefore
+his owner property would be an invalid representation of his true owner. I have
+not been able to come up with an idea for how to solve this problem, other than to
+create a database of Disney characters and use that as a lookup for validity upon
+instantiation of a DisneyCharacter, but I don't know how to create a database so I
+have not solved this problem.
+
+
+Assumptions:
+
+It was unclear whether or not a DisneyCharacter object should have the ability to
+change movies. I assumed that it wouldn't be okay because once you're in a movie,
+you're in it forever, there's no going back, so I declared the DisneyCharacter
+movie member variable as a private constant.

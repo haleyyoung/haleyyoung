@@ -1,0 +1,51 @@
+extends ../../lmuLayout
+
+block content
+  h1= title
+
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") Instructions
+      p Type up your solutions. For questions involving code, save your code in a .java file and  
+        | upload it to your GitHub repository. Your unit tests should be in a separate file. Also, remember 
+        | to put your code in a folder called "homeworkx" where x is the assignment number. All lowercase 
+        | folder names please!
+      p Be aware that the extent to which your unit test class actually tests your code will be factored 
+        | into your grade.
+      p Be sure to include your unit tests for your Gargantuint class and lab report (
+        a(href="/downloadableContent/exampleLabReport.txt" download) example here
+        | ) along with your code submission. Your 
+        | code, unit tests and lab report should be in separate files. Save your lab report 
+        | with a .txt extension.
+      p If you're choosing to turn in your homework late (2 day grace period for a 10% deduction), 
+        | please send me an email so I know not to immediately grade your submission.
+        br
+        br
+      p Due March 17th
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      p 1. Create a class called Gargantuint. Your class should implement all of the methods 
+        | in these 
+        a(href="/downloadableContent/javadocs/gargantuintutil/Gargantuint.html" target="_blank") javadocs
+        | . If a method is not implemented, you must stub out the method and throw an
+        | UnsupportedOperationException.
+        p(class="indent") These javadocs are not exhaustive in that there might be other 
+          | methods you need to implement as helper methods to the ones listed in the javadocs.
+          | Make sure to comment ALL of the methods in your Gargantuint class.
+        p Things to remember:
+          ul
+            li You may represent your Gargantuints in decimal or binary (or another base) 
+              | if that would make your method implementations easier.
+            li You may also use the algorithms described in class for multiplication and division.
+            li You must solve these problems from first principles.
+            li You may not use the ArrayList or BigInteger classes or the built in modulus, 
+              | multiplication or division operators. You may, however use any of the other built 
+              | in operators.
+            li For the multiplication, division, and mod methods, you may not use repeated 
+              | addition or repeated subtraction.

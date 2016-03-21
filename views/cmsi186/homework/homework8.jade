@@ -1,0 +1,87 @@
+extends ../../lmuLayout
+
+block content
+  h1= title
+
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") Instructions
+      p Type up your solutions. For questions involving code, save your code in a .java file and  
+        | upload it to your GitHub repository. Your unit tests should be in a separate file. Also, remember 
+        | to put your code in a folder called "homeworkx" where x is the assignment number. All lowercase 
+        | folder names please!
+      p Be aware that the extent to which your unit test class actually tests your code will be factored 
+        | into your grade. You should have unit tests for all methods and constructors created. Do not leave 
+        | giant chunks of code in one method because you don't want to test 2 methods.
+      p Be sure to include your unit tests and lab report (
+        a(href="/downloadableContent/exampleLabReport.txt" download) example here
+        | ) along with your code submission. Your 
+        | code, unit tests and lab report should be in separate files. Save your lab report 
+        | with a .txt extension.
+      p If you're choosing to turn in your homework late (2 day grace period for a 10% deduction), 
+        | please send me an email so I know not to immediately grade your submission.
+        br
+        br
+      p Due April 5th
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      p 1. Create a class called AreaEstimator which takes in arguments from the command line 
+        | and returns the corresponding area for the shapes and arguments provided. Your AreaEstimator 
+        | must use the randomized estimation technique discussed in class and must be able to handle 
+        | the area of shape intersection, union and the composite area of all shapes which are not touching 
+        | any others.
+        br
+        p(class="indent") Example input and its English translation:
+          br
+          | AreaEstimator 1000000 intersect circle 0 0 4.4 triangle 2.99 7 -4.3 11 0 0
+          br
+          | Throw 1,000,000 darts and find the intersection of a circle centered at (0,0) with 
+          | radius 4.4 and a triangle whose three points are (2.99, 7) (-4.3, 11) and (0, 0).
+          br
+          | AreaEstimator 900000 union circle 0 0 4.4 triangle 2.99 7 -4.3 11 0 0 circle 2 9 12
+          br
+          | Throw 900,000 darts and find the union of a circle centered at (0,0) with 
+          | radius 4.4, a triangle whose three points are (2.99, 7) (-4.3, 11) and (0, 0), and another 
+          | circle centered at (2, 9) with radius 12.
+          br
+          | AreaEstimator 1000000 noIntersect circle 0 0 4.4 triangle 2.99 7 -4.3 11 0 0
+          br
+          | Throw 1,000,000 darts and find the area of a circle centered at (0,0) with 
+          | radius 4.4 and a triangle whose three points are (2.99, 7) (-4.3, 11) and (0, 0) and if they are NOT 
+          | intersecting, return the area of both shapes, but if they're intersecting, then the area returned 
+          | among those two shapes should be 0.
+        br
+        p(class="indent") Your class should be able to handle an arbitrary number of circles and triangles and 
+          | any one of the three area specifications. 
+          | It should also take in and return (and print) doubles. If the input is invalid, throw an 
+          | exception stating how the input should look.
+        p(class="indent") It will probably be helpful to implement a Shape class with 
+          | Circle and Triangle subclasses for handling the command line input in an organized manner,
+          | but this is not required. As long as the user experience is as described above.
+          | Make sure to comment ALL of your methods.
+        br
+        p If you'd like to use this 
+          a(href="http://myweb.lmu.edu/dondi/share/lab/Dartboard.java") visualizer
+          |  that Dondi made, you will want to output information
+          | for each point tested, surrounded, by 'start' and 'end', i.e.
+          br
+          p(class="indent") start
+            br
+            | 0.2345 1.6578 in
+            br
+            | 7.6654 9.1112 out
+            br
+            | ...
+            br
+            | end
+            br
+          | Then call your code as follows:
+          br
+          p(class="indent") java AreaEstimator 1000000 intersect circle 0 0 4.4 triangle 2.99 7 -4.3 11 0 0 |
+            | java Dartboard

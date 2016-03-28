@@ -34,8 +34,7 @@ block content
       p 1. Create a class called AreaEstimator which takes in arguments from the command line 
         | and returns the corresponding area for the shapes and arguments provided. Your AreaEstimator 
         | must use the randomized estimation technique discussed in class and must be able to handle 
-        | the area of shape intersection, union and the composite area of all shapes which are not touching 
-        | any others.
+        | the area of shape intersection, union and difference.
         br
         p(class="indent") Example input and its English translation:
           br
@@ -50,12 +49,12 @@ block content
           | radius 4.4, a triangle whose three points are (2.99, 7) (-4.3, 11) and (0, 0), and another 
           | circle centered at (2, 9) with radius 12.
           br
-          | AreaEstimator 1000000 noIntersect circle 0 0 4.4 triangle 2.99 7 -4.3 11 0 0
+          | AreaEstimator 1000000 difference circle 0 0 4.4 triangle 2.99 7 -4.3 11 0 0
           br
           | Throw 1,000,000 darts and find the area of a circle centered at (0,0) with 
-          | radius 4.4 and a triangle whose three points are (2.99, 7) (-4.3, 11) and (0, 0) and if they are NOT 
-          | intersecting, return the area of both shapes, but if they're intersecting, then the area returned 
-          | among those two shapes should be 0.
+          | radius 4.4 and a triangle whose three points are (2.99, 7) (-4.3, 11) and (0, 0) where 
+          | the shapes do NOT intersect. Meaning include space that is in one, but no more than one 
+          | of the shapes.
         br
         p(class="indent") Your class should be able to handle an arbitrary number of circles and triangles and 
           | any one of the three area specifications. 

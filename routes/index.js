@@ -21,6 +21,11 @@ router.get('/projects', function(req, res) {
 	res.render('projects', {title: 'Projects'});
 });
 
+/* GET projects page. */
+router.get('/minion', function(req, res) {
+	res.render('minionAnimation', {title: 'Minion Animation'});
+});
+
 /* GET CMSI 185 home page. */
 router.get('/cmsi185', function(req, res) {
   res.render('./cmsi185/syllabus', { title: 'Syllabus', course: 'cmsi185'});

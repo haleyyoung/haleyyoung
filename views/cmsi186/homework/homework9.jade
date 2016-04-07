@@ -1,0 +1,60 @@
+extends ../../lmuLayout
+
+block content
+  h1= title
+
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") Instructions
+      p Type up your solutions. For questions involving code, save your code in a .java file and  
+        | upload it to your GitHub repository. Your unit tests should be in a separate file. Also, remember 
+        | to put your code in a folder called "homeworkx" where x is the assignment number. All lowercase 
+        | folder names please!
+      p Be aware that the extent to which your unit test class actually tests your code will be factored 
+        | into your grade. You should have unit tests for all methods and constructors created. Do not leave 
+        | giant chunks of code in one method because you don't want to test 2 methods.
+      p Be sure to include your unit tests and lab report (
+        a(href="/downloadableContent/exampleLabReport.txt" download) example here
+        | ) along with your code submission. Your 
+        | code, unit tests and lab report should be in separate files. Save your lab report 
+        | with a .txt extension.
+      p If you're choosing to turn in your homework late (2 day grace period for a 10% deduction), 
+        | please send me an email so I know not to immediately grade your submission.
+        br
+        br
+      p Due April 19th
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      p 1. Create a class called Tuple which implements everything in these 
+        a(href="/downloadableContent/javadocs/tuple/Tuple.html" target="_blank") javadocs
+        | . This tuple class should be utilized by your ChangeMaker class and, as always, 
+        | may contain other methods you deem necessary.
+      p 2. Create a class called ChangeMaker which takes in arguments from the command line 
+        | and returns the most efficient set of coins to make the change specified.
+        | Your code must use the dynamic programming technique discussed in class.
+        br
+        p Example input and its English translation:
+          br
+          br
+        p(class="indent") ChangeMaker 52 coins 1 5 10 25
+          br
+          | Make change for 52 cents with coin denominations 1, 5, 10, and 25.
+          br
+          br
+          | ChangeMaker 1000 coins 2 12 1 37
+          br
+          | Make change for 1000 cents with coin denominations 2, 12, 1, and 37.
+          br
+          br
+        p You should not accept duplicate coin denominations, negative 
+          | numbers, or non-integer specifications.
+          br
+          | Please note that it is possible for the user to ask for change with 
+          | denominations that cannot make that change, your code should be able to 
+          | handle this, and it should not return an error.

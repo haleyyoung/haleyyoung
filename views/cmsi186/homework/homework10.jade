@@ -1,0 +1,78 @@
+extends ../../lmuLayout
+
+block content
+  h1= title
+
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      h2(class="project-title") Instructions
+      p Type up your solutions. For questions involving code, save your code in a .java file and  
+        | upload it to your GitHub repository. Your unit tests should be in a separate file. Also, remember 
+        | to put your code in a folder called "homeworkx" where x is the assignment number. All lowercase 
+        | folder names please!
+      p Be aware that the extent to which your unit test class actually tests your code will be factored 
+        | into your grade. You should have unit tests for all methods and constructors created. Do not leave 
+        | giant chunks of code in one method because you don't want to test 2 methods.
+      p Be sure to include your unit tests and lab report (
+        a(href="/downloadableContent/exampleLabReport.txt" download) example here
+        | ) along with your code submission. Your 
+        | code, unit tests and lab report should be in separate files. Save your lab report 
+        | with a .txt extension.
+      p If you're choosing to turn in your homework late (2 day grace period for a 10% deduction), 
+        | please send me an email so I know not to immediately grade your submission.
+        br
+        br
+      p Due May 3rd
+
+  div
+  .panel.panel-default.content.project-div
+    div
+    .panel-body
+      p 1. Create a class called MapColoring which takes in one argument from the command line, 
+        | a file name. This file should contain 
+        | information for a map. You may use a BufferedReader to get the contents of this file.
+      p(class="indent") The first line will be names of map nodes, you can expect 
+        | these to be Strings, i.e. "a".
+      p(class="indent") The following lines will be specifications of which nodes are touching 
+        | (connected to) each other, i.e. "a b".
+      p Your class will print to the command line the coloring of these nodes with 4 colors 
+        | (of your choice), such that no two touching nodes are colored the same.
+      p You must implement this using the backtracking method described in class. You may use 
+        | either an iterative or recursive approach. Although the 4 Color Theorem proves that 
+        | all planar maps can be colored with 4 colors, your code must account for the possibility 
+        | of no solution being found.
+      p Your class must be implemented from first principles and you may create any helper 
+        | classes/methods you'd like.
+      p(class="indent") An example input file's contents:
+        br
+        | a b c d e f g
+        br
+        | a b
+        br
+        | c f
+        br
+        | c g
+        br
+        | g b
+        br
+        | d a
+        br
+        | e a
+      p(class="indent") Your output would look something like:
+        br
+        | a: pink
+        br
+        | b: green
+        br
+        | c: pink
+        br
+        | d: turquoise
+        br
+        | e: green
+        br
+        | f: green
+        br
+        | g: turquoise
